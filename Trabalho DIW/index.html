@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio Futurista</title>
+    
+    <!-- Importando a fonte Orbitron do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Importando o Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    
+    <!-- Importando Animate.css para animações -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
+    <!-- Estilos CSS personalizados -->
+    <style>
+        body {
+            background-color: #121212;
+            color: #f0f0f0;
+            font-family: 'Orbitron', sans-serif;
+        }
+        .navbar {
+            background: linear-gradient(45deg, #0f0c29, #302b63, #24243e);
+        }
+        .card, .modal-content {
+            background-color: #1e1e1e;
+            border: 1px solid #333;
+        }
+        .card-title, .modal-title {
+            color: #00e6e6;
+        }
+        .btn-primary {
+            background-color: #00e6e6;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #009999;
+        }
+        .carousel-item img {
+            filter: brightness(70%);
+        }
+        a, a:hover {
+            color: #00e6e6;
+            text-decoration: none;
+        }
+        .rounded-circle {
+            border: 2px solid #00e6e6;
+        }
+        footer {
+            background-color: #0f0c29;
+        }
+        /* Exemplos de animações com Animate.css */
+        .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+        .animate__fadeIn {
+            animation-name: fadeIn;
+        }
+        .animate__fadeInLeft {
+            animation-name: fadeInLeft;
+        }
+        .animate__fadeInRight {
+            animation-name: fadeInRight;
+        }
+        .animate__fadeInUp {
+            animation-name: fadeInUp;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark animate__animated animate__fadeInDown">
+        <div class="container">
+            <a class="navbar-brand" href="#">Cristhian Dias Braga</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre Mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfólio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sobre Mim -->
+    <section id="sobre" class="py-5 animate__animated animate__fadeIn">
+        <div class="container">
+            <h2 class="text-center mb-5">Sobre Mim</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="row mb-3 align-items-center">
+                        <div class="col-lg-6">
+                            <img src="WhatsApp Image 2024-04-18 at 09.41.52 (1).jpeg" class="img-fluid rounded-circle" alt="Foto de Perfil">
+                        </div>
+                        <div class="col-lg-6">
+                            <p><strong>Nome Completo:</strong> Cristhian Dias Braga</p>
+                            <p><strong>Aniversário:</strong> 28/11/2005</p>
+                            <p><strong>Hobby:</strong> Jogos, música, produção e edição de vídeo</p>
+                            <p><strong>Descrição:</strong> Estudante da Puc Minas (unidade de Betim) em Analise e desenvolvimento de sistemas. Sonho trabalhar em uma grande empresa, e ajudar com algo que faça a diferença na vida de alguém de alguma forma.</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <a href="https://www.instagram.com/cris__braga07/" target="_blank">
+                                <img src="Instagram.png" class="img-fluid rounded-circle" alt="Instagram icon">
+                            </a>
+                            <p><strong>cris__braga07</strong></p>
+                        </div>
+                        <div class="col-lg-2">
+                            <a href="https://www.youtube.com/channel/UC6WugmGPL28mR1t-oIDkNlw" target="_blank">
+                                <img src="youtube-icon-2048x2048-wiwalbpx.png" class="img-fluid rounded-circle" alt="Youtube icon">
+                            </a>
+                            <p><strong>Cris</strong></p>
+                        </div>
+                        <div class="col-lg-6">
+                            <a href="https://github.com/Cris071005" target="_blank">
+                                <img src="github_black_logo_icon_147128-removebg-preview.png" class="img-fluid rounded-circle" alt="Github icon">
+                            </a>
+                            <p><strong>Cris071005</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfólio -->
+    <section id="portfolio" class="py-5 bg-light animate__animated animate__fadeIn">
+        <div class="container">
+            <h2 class="text-start mb-5">Portfólio</h2>
+            <div class="row" id="portfolio-content">
+                <!-- Projetos serão carregados aqui dinamicamente -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Placeholder for Modals -->
+    <div id="modals-container"></div>
+
+    <!-- Conteúdo Sugerido -->
+    <section id="conteudo-sugerido" class="py-5 animate__animated animate__fadeIn">
+        <div class="container">
+            <h2 class="text-center mb-5">Conteúdo Sugerido</h2>
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="portfolio-para-estudante-de-arquitetura.webp" class="d-block w-100" alt="Slide 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="aplicando-estilos-css-1521410533.png" class="d-block w-100" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="ainda-falta-a-imagem-que-esta-no-email-o-que-e-bootstrap_5a6d273c5b86b95c50aaf6e04941affa.webp" class="d-block w-100" alt="Slide 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="o-que-e-html.jpg" class="d-block w-100" alt="Slide 4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="3577ab9d-f4ca-4012-bb8b-ed67b27bb32c.webp" class="d-block w-100" alt="Slide 5">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Colegas de Sala -->
+    <section id="colegas" class="py-5 bg-dark animate__animated animate__fadeIn">
+        <div class="container">
+            <h2 class="text-center text-light mb-5">Colegas de Sala</h2>
+            <div class="row">
+                <!-- Card para Colega 1 -->
+                <div class="col-lg-3 mb-4 animate__animated animate__fadeInLeft">
+                    <div class="card" onclick="window.location.href='https://github.com/Alan118020'">
+                        <img src="Capturar.PNG" class="card-img-top" alt="Colega 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Alan</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card para Colega 2 -->
+                <div class="col-lg-3 mb-4 animate__animated animate__fadeInUp">
+                    <div class="card" onclick="window.location.href='https://github.com/AndreRavacini'">
+                        <img src="WhatsApp Image 2024-04-18 at 17.23.28.jpeg" class="card-img-top" alt="Colega 2">
+                        <div class="card-body">
+                            <h5 class="card-title">André</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card para Colega 3 -->
+                <div class="col-lg-3 mb-4 animate__animated animate__fadeInDown">
+                    <div class="card" onclick="window.location.href='https://github.com/victor'">
+                        <img src="402812516_1124604488907636_493934088469480900_n.jpg" class="card-img-top" alt="Colega 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Victor</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card para Colega 4 -->
+                <div class="col-lg-3 mb-4 animate__animated animate__fadeInRight">
+                    <div class="card" onclick="window.location.href='https://github.com/wescruzz'">
+                        <img src="Wesley foto.JPEG" class="card-img-top" alt="Colega 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Wesley</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5 animate__animated animate__fadeIn">
+        <div class="container">
+            <h2 class="text-start mb-5">Contato</h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form>
+                        <ul class="list-unstyled">
+                            <li><i class="bi bi-envelope"></i> cristhianbraga05@gmail.com</li>
+                            <li><i class="bi bi-telephone"></i> (31) 9 9625-4151</li>
+                            <li><i class="bi bi-geo-alt"></i>Cidade: Betim, Estado: Minas Gerais, CEP: 32675858</li>
+                        </ul>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-4 text-center animate__animated animate__fadeIn">
+        <div class="container">
+            &copy; 2024 Meu Portfólio Futurista
+        </div>
+    </footer>
+
+    <!-- Incluindo o Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    
+    <!-- Incluindo o script para buscar e exibir os dados -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            fetch('http://localhost:3000/projetos')
+                .then(response => response.json())
+                .then(data => {
+                    const portfolioContent = document.getElementById('portfolio-content');
+                    const modalsContainer = document.getElementById('modals-container');
+                    portfolioContent.innerHTML = '';
+                    modalsContainer.innerHTML = '';
+
+                    data.forEach((projeto, index) => {
+                        const colDiv = document.createElement('div');
+                        colDiv.className = 'col-lg-4 mb-4 animate__animated animate__fadeIn';
+                        colDiv.innerHTML = `
+                            <div class="card">
+                                <img src="${projeto.imagem}" class="card-img-top" alt="Projeto ${index + 1}">
+                                <div class="card-body">
+                                    <h5 class="card-title">${projeto.titulo}</h5>
+                                    <p class="card-text">${projeto.descricao}</p>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#projeto${index + 1}Modal">Detalhes</button>
+                                </div>
+                            </div>
+                        `;
+                        portfolioContent.appendChild(colDiv);
+
+                        const modalDiv = document.createElement('div');
+                        modalDiv.className = 'modal fade animate__animated animate__fadeIn';
+                        modalDiv.id = `projeto${index + 1}Modal`;
+                        modalDiv.tabIndex = '-1';
+                        modalDiv.setAttribute('aria-labelledby', `projeto${index + 1}ModalLabel`);
+                        modalDiv.setAttribute('aria-hidden', 'true');
+                        modalDiv.innerHTML = `
+                            <div class="modal-dialog modal-dialog-centered modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="projeto${index + 1}ModalLabel">Detalhes do ${projeto.titulo}</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <img src="${projeto.imagem}" class="img-fluid mb-3" alt="${projeto.titulo}">
+                                        <h5>${projeto.titulo}</h5>
+                                        <p>Data de Criação: ${projeto.dataCriacao}</p>
+                                        <p>${projeto.descricaoDetalhada}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                        modalsContainer.appendChild(modalDiv);
+                    });
+                })
+                .catch(error => console.error('Erro ao buscar dados do servidor:', error));
+        });
+    </script>
+</body>
+</html>
+

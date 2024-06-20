@@ -1,0 +1,28 @@
+{
+  "amigos": [
+    {
+      "nome": "André Lucas",
+      "telefone": "31 7122-6312",
+      "email": "amigo1@example.com",
+      "github": "https://github.com/AndreRavacini"
+    },
+    {
+      "nome": "Alan Lacerda",
+      "telefone": "31 9079-4541",
+      "email": "alanarantes510@gmail.com",
+      "github": "https://github.com/Alan118020"
+    },
+    {
+      "nome": "Victor Jorge",
+      "telefone": "31 9201-5097",
+      "email": "amigo3@example.com",
+      "github": "https://github.com/amigo3"
+    },
+    {
+      "nome": "Wesley Melo",
+      "telefone": "31 9548-2523",
+      "email": "Wesscruz7777@gmail.com",
+      "github": "https://github.com/wescruzz"
+    }
+  ]
+}

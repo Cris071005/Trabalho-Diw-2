@@ -1,0 +1,55 @@
+
+    "usuarios": [
+      {
+        "id": 1,
+        "login": "Cristhian",
+        "senha": "Cristhian123",
+        "nome": "Administrador do Sistema",
+        "email": "cristhianbraga05@gmail.com"
+      },
+        {
+          "id": 2,
+          "login": "Andre",
+          "senha": "Andre123",
+          "nome": "Usuario Comum",
+          "email": "admin@abc.com"
+        },
+        {
+          "id": 3,
+          "login": "Alan",
+          "senha": "Alan123",
+          "nome": "Usuario Comum",
+          "email": "alanarantes510@gmail.com"
+        },
+        {
+          "id": 4,
+          "login": "Victor",
+          "senha": "Victor123",
+          "nome": "Usuario Comum",
+          "email": "user@abc.com"
+        },
+       {
+          "id": 5,
+          "login": "Wesley",
+          "senha": "Wesley123",
+          "nome": "Usuario Comum",
+          "email": "Wesscruz7777@gmail.com"
+        }
+    ],
+    "locais": [
+        {
+          "id": 1,
+          "descricao": "PUC Minas - Betim",
+          "endereco": "R. do Rosário, 1.081 Bairro Angola",
+          "favorito": true,
+          "cidade": "Betim",
+          "latlong": [
+            -44.1984331,
+            -19.9550716
+          ],
+          "url": "https://www.pucminas.br/unidade/betim/Paginas/default.aspx",
+          "cor": "blue"
+        }
+      ]
+    
+       
